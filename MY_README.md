@@ -74,6 +74,9 @@ Example:
         test1 - verify that component produces a comment box and button
         test2 - verify that when a user clicks the button, the text area is cleared
 
-![Testing Design](images/TestingDesign.png =500x "TestingDesign")
+![Testing Design](images/TestingDesign.png "TestingDesign")
+
+<img src="/images/TestingDesign.png" alt="TestingDesign" width="500px"/>
+
 
 
