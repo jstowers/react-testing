@@ -58,4 +58,17 @@ Consider this process when writing tests:
     2.  Imagine telling friends, "Here's what this code does"
     3.  Write a test to verify that each part does what you expect
 
+Example:
+    1.  CommentList Component
+        function - displays a list of comments on the screen
 
+        test1 - verify that for every comment, we create exactly
+        one element on the screen
+
+    2.  CommentBox Component
+        function - comment box displays a text area and submit button
+
+        test1 - verify that component produces a comment box and button
+        test2 - verify that when a user clicks the button, the text area is cleared
+
+![Testing Design](images/ReduxStructure.png?raw=true "TestingDesign")
