@@ -76,7 +76,25 @@ Example:
 
 ![Testing Design](images/TestingDesign.png "TestingDesign")
 
-<img src="/images/TestingDesign.png" alt="TestingDesign" width="500px"/>
+<img src="/images/TestingDesign.png" alt="Testing Design" width="650px"/>
 
+### Test Structure ###
+Sec. 2, Lec. 14
+
+it - global function that contains two parameters:
+
+1.  string - communicates intent of test to yourself and other engineers
+2.  function - contains our test logic
+
+React only runs correctly when components are rendered inside a browser.  But when we're running test from the command line, this doesn't occur.  So create-react-app installed a dependency call JSDOM that allows Jest to simulate a runner.
+
+JSDOM creates a new div, stored solely in memory.  Behind the scenes, React will take HTML produced from our React component and place it inside the 'div' element.
+
+Cleanup after test is run:
+````
+    ReactDOM.unmountCompnentAtNode(div)
+````
+
+To keep the test suite performing optimally, we need to clean-up code.
 
 
